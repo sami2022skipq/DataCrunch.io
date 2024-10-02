@@ -87,14 +87,14 @@ function Gpus() {
               className="object-scale-down mx-auto"
             />
           </div>
-          <div className=" col-span-2 lg:col-span-1 flex flex-col justify-center max-lg:text-center max-lg:mx-auto lg:justify-start gap-4">
+          <div className=" col-span-2 lg:col-span-1 flex flex-col justify-center max-lg:text-center max-lg:items-center lg:justify-start gap-4">
               <div className=" text-white text-xl font-semibold">
                 H100 clusters
               </div>
               <div className=" text-white text-lg font-semibold mb-4">
                 At the forefront of digital intelligence
               </div>
-            <div className="flex flex-col justify-start text-gray-400 font-semibold gap-1 mb-2">
+            <div className="flex flex-col justify-start text-gray-400  max-md:text-sm font-semibold gap-1 mb-2">
               <p>
                 Our clusters exclusively use the NVIDIA H100 SXM5 80GB NVLINK
                 modules. Contact us for more information.
@@ -108,8 +108,8 @@ function Gpus() {
             </div>
 
             
-            <button className="flex-none w-32 px-2 py-1 font-semibold bg-slate-500 rounded-lg transition duration-300 text-white hover:bg-slate-700 hover:text-gray-300">
-              Order Now!
+            <button className="w-32 px-2 py-1 font-semibold bg-slate-500 rounded-lg transition duration-300 text-white hover:bg-slate-700 hover:text-gray-300">
+              Order Now
             </button>
           </div>
         </div>

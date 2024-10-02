@@ -1,5 +1,4 @@
 import Image from "next/image";
-import NavBar from "./components/navBar";
 
 import Carasoule from "./components/carasoule";
 import Gpus from "./components/gpu";
@@ -12,21 +11,21 @@ import Footer from "./components/footer";
 export default function Home() {
   return (
     <div className="">
-      <div className="container flex flex-col justify-center mx-auto px-8 gap-4">
-        <NavBar />
+      <div className="container flex flex-col justify-center mx-auto px-16 gap-4">
         <HeroSection />
       </div>
-      <Carasoule />
-      <div className="container flex flex-col justify-center mx-auto p-8 gap-4">
+      <div className="hidden md:block mt-4">
+        <Carasoule />
+      </div>
+      <div className="container flex flex-col justify-center mx-auto p-8 gap-6 md:gap-14">
         <Gpus />
         <Qualities />
         <PriceCalculator />
       </div>
-      <div className="w-full bg-blue-100">
+      <div className="w-full bg-[#f5f9f9]">
         <div className="container flex flex-col justify-center mx-auto p-8 gap-8">
           <ContactUs />
-          <div className="border-b-2 border-gray-400"></div>
-          <Footer/>
+          <div className="border-b border-gray-300"></div>
         </div>
       </div>
     </div>

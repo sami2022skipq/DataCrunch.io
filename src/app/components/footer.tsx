@@ -1,15 +1,22 @@
+import Image from "next/image";
+import dataCrunchLogo from "@/assets/dataCrunchIO.svg";
+
 const Footer = () => {
   return (
-    <footer className="">
+    <footer className=" w-full  bg-[#f5f9f9]">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-center  md:justify-between space-x-4  space-y-8 md:space-y-0">
           {/* Logo and Description */}
           <div className="space-y-2 md:w-1/5">
-            <img src="/logo.svg" alt="DataCrunch.io Logo" className="w-32" />
+            <Image
+              src={dataCrunchLogo}
+              alt="DataCrunch.io Logo"
+              className="w-60 object-cover cursor-pointer"
+            />
+
             <p className="text-gray-600">Premium GPU servers & clusters</p>
             <p className="text-gray-600">Model inference services</p>
           </div>
-          <div> </div>
 
           {/* GPU Products */}
           <div className="md:w-1/5">

@@ -44,38 +44,7 @@ const PartnerSlider = () => {
       name: "Freeipk",
       srcColor: freepik,
     },
-    {
-      name: "NEX",
-      srcColor: nexx,
-    },
-    {
-      name: "Soney",
-      srcColor: soney,
-    },
-    {
-      name: "Harvard",
-      srcColor: harvard,
-    },
-    {
-      name: "NEC",
-      srcColor: nex,
-    },
-    {
-      name: "Korea",
-      srcColor: korea,
-    },
-    {
-      name: "Black Forest Labs",
-      srcColor: blackForest,
-    },
-    {
-      name: "ManifestAI",
-      srcColor: manifest,
-    },
-    {
-      name: "Freeipk",
-      srcColor: freepik,
-    },
+ 
   ];
 
   return (
