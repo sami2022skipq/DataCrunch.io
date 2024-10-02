@@ -3,7 +3,7 @@ import React from "react";
 function PriceCalculator() {
   return (
     <div
-      className="grid grid-cols-2 mb-8 gap-4
+      className="grid grid-cols-2 mb-8 gap-6
     "
     >
       <div className="col-span-2 lg:col-span-1 rounded-lg bg-[#f5f9f9] h-[570px]"></div>

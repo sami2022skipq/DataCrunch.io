@@ -9,6 +9,8 @@ import nexx from "@/assets/nexx.svg";
 import blackForest from "@/assets/black-forest.svg";
 import freepik from "@/assets/freepik.svg";
 import manifest from "@/assets/manifest.svg";
+import mit from '@/assets/mit.svg'
+import findable from '@/assets/findable.svg'
 
 const PartnerSlider = () => {
   const partners = [
@@ -33,6 +35,14 @@ const PartnerSlider = () => {
       srcColor: korea,
     },
     {
+      name: "MIT",
+      srcColor: mit,
+    },
+    {
+      name: "Findable",
+      srcColor: findable,
+    },
+    {
       name: "Black Forest Labs",
       srcColor: blackForest,
     },
@@ -40,10 +50,10 @@ const PartnerSlider = () => {
       name: "ManifestAI",
       srcColor: manifest,
     },
-    {
-      name: "Freeipk",
-      srcColor: freepik,
-    },
+    // {
+    //   name: "Freeipk",
+    //   srcColor: freepik,
+    // },
  
   ];
 

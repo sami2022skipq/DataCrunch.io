@@ -4,10 +4,10 @@ import dataCrunchLogo from "@/assets/dataCrunchIO.svg";
 const Footer = () => {
   return (
     <footer className=" w-full  bg-[#f5f9f9]">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row justify-center  md:justify-between space-x-4  space-y-8 md:space-y-0">
+      <div className="container mx-auto px-8">
+        <div className="flex flex-col md:flex-row   md:justify-between space-x-4 max-md:text-center  space-y-8 md:space-y-0">
           {/* Logo and Description */}
-          <div className="space-y-2 md:w-1/5">
+          <div className="space-y-2 md:w-1/5 max-md:mx-auto">
             <Image
               src={dataCrunchLogo}
               alt="DataCrunch.io Logo"
@@ -19,7 +19,7 @@ const Footer = () => {
           </div>
 
           {/* GPU Products */}
-          <div className="md:w-1/5">
+          <div className="md:w-1/5 ">
             <h3 className="text-lg font-semibold text-gray-800">
               GPU Products
             </h3>
@@ -34,7 +34,7 @@ const Footer = () => {
           </div>
 
           {/* Inference */}
-          <div className="md:w-1/5">
+          <div className="md:w-1/5 ">
             <h3 className="text-lg font-semibold text-gray-800">Inference</h3>
             <ul className="space-y-2 text-gray-600">
               <li>Serverless Inference</li>
@@ -43,7 +43,7 @@ const Footer = () => {
           </div>
 
           {/* Company */}
-          <div className="md:w-1/5">
+          <div className="md:w-1/5 ">
             <h3 className="text-lg font-semibold text-gray-800">Company</h3>
             <ul className="space-y-2 text-gray-600">
               <li>Contact Us</li>
@@ -55,7 +55,7 @@ const Footer = () => {
           </div>
 
           {/* Resources */}
-          <div className="md:w-1/5">
+          <div className="md:w-1/5 ">
             <h3 className="text-lg font-semibold text-gray-800">Resources</h3>
             <ul className="space-y-2 text-gray-600">
               <li>Blog</li>

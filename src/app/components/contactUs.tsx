@@ -11,7 +11,7 @@ function ContactUs() {
         <button className="px-4 py-2 bg-[#245866] text-white rounded-lg transition duration-300 hover:bg-teal-900">
           Sign up
         </button>
-        <button className="px-4 py-2 text-[#245866] hover:text-gray-500 transition duration-300 rounded-lg border-2 border-[#245866] ">
+        <button className="px-4 py-2 text-[#245866] hover:text-gray-500 transition duration-300 rounded-lg border border-[#245866] ">
           Contact us
         </button>
       </div>
