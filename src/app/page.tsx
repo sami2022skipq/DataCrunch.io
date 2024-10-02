@@ -3,7 +3,7 @@ import Image from "next/image";
 import Carasoule from "./components/carasoule";
 import Gpus from "./components/gpu";
 import Qualities from "./components/qualities";
-import PriceCalculator from "./components/priceCalculator";
+import PriceSection from "./components/priceSection";
 import ContactUs from "./components/contactUs";
 import HeroSection from "./components/heroSection";
 import Footer from "./components/footer";
@@ -20,7 +20,7 @@ export default function Home() {
       <div className="container flex flex-col justify-center mx-auto p-8 gap-6 md:gap-14">
         <Gpus />
         <Qualities />
-        <PriceCalculator />
+        <PriceSection />
       </div>
       <div className="w-full bg-[#f5f9f9]">
         <div className="container flex flex-col justify-center mx-auto p-8 gap-8">

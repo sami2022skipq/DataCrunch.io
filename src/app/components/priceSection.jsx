@@ -1,17 +1,20 @@
 import React from "react";
+import PriceCalculator from "./priceCalculator";
 
-function PriceCalculator() {
+function PriceSection() {
   return (
     <div
       className="grid grid-cols-2 mb-8 gap-6
     "
     >
-      <div className="col-span-2 lg:col-span-1 rounded-lg bg-[#f5f9f9] h-[570px]"></div>
+      <PriceCalculator />
       <div className="col-span-2 lg:col-span-1 flex flex-col gap-4 lg:gap-8 items-start justify-center">
         <p className="text-[#245866] md:text-lg font-semibold">
           All infrastructure powered by renewable energy
         </p>
-        <h1 className=" text-2xl md:text-4xl font-semibold">High-end GPU instances</h1>
+        <h1 className=" text-2xl md:text-4xl font-semibold">
+          High-end GPU instances
+        </h1>
         <div className="flex flex-col gap-1">
           <p className="text-[#707070] md:text-lg font-semibold">
             Order and access your GPU in just minutes via our intuitive
@@ -35,4 +38,4 @@ function PriceCalculator() {
   );
 }
 
-export default PriceCalculator;
+export default PriceSection;
