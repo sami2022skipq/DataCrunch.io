@@ -9,8 +9,8 @@ import nexx from "@/assets/nexx.svg";
 import blackForest from "@/assets/black-forest.svg";
 import freepik from "@/assets/freepik.svg";
 import manifest from "@/assets/manifest.svg";
-import mit from '@/assets/mit.svg'
-import findable from '@/assets/findable.svg'
+import mit from "@/assets/mit.svg";
+import findable from "@/assets/findable.svg";
 
 const PartnerSlider = () => {
   const partners = [
@@ -54,7 +54,6 @@ const PartnerSlider = () => {
     //   name: "Freeipk",
     //   srcColor: freepik,
     // },
- 
   ];
 
   return (
@@ -65,7 +64,9 @@ const PartnerSlider = () => {
             <Image
               src={partner.srcColor}
               alt={partner.name}
-              className="svg-icon transition duration-300 hover:filter-none "
+              height={80}
+              width={160}
+              className="svg-icon transition h-[80px] duration-300 opacity-50 hover:filter-none hover:opacity-100 "
             />
           </div>
         ))}
