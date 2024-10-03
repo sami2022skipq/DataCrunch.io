@@ -9,7 +9,7 @@ export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="sticky top-0 z-50 bg-white w-full border-b border-gray-300">
-      <nav className=" container mx-auto flex justify-between items-baseline- px-8 py-4 ">
+      <nav className=" container mx-auto flex justify-between items-baseline- px-4 md:px-8 py-2 md:py-4 ">
         <Image
           src={dataCrunchLogo}
           alt="DataCrunch.io Logo"
@@ -55,43 +55,47 @@ export default function NavBar() {
           <IoMdMenu />
         </button>
         {/* Mobile Dropdown Menu */}
-        {isOpen && (
-          <div className=" lg:hidden absolute top-12 bg-white w-full z-50 transition duration-500">
-            <div className="flex flex-col space-y-2 justify-center md:justify-start font-medium text-[#707070] py-2">
-              <Link href="#" className="hover:underline">
-                GPU Cloud
-              </Link>
-              <Link href="#" className="hover:underline">
-                Clusters
-              </Link>
-              <Link href="#" className="hover:underline">
-                Inference
-              </Link>
-              <Link href="#" className="hover:underline">
-                Blog
-              </Link>
-              <Link href="#" className="hover:underline">
-                API
-              </Link>
-              <Link href="#" className="hover:underline">
-                Docs
-              </Link>
-
-              <div className="mx-auto items-center space-x-4 font-semibold text-[#707070]">
-                <Link href="#" className=" hover:text-gray-700">
-                  Login
-                </Link>
-                <Link
-                  href="#"
-                  className="px-4 py-2 bg-teal-800 text-white rounded-lg hover:bg-[#245866]"
-                >
-                  Sign up
-                </Link>
-              </div>
-            </div>
-          </div>
-        )}
       </nav>
+      {/* {isOpen && ( */}
+      <div
+        className={`lg:hidden overflow-hidden  transition-all duration-500 ease-in-out ${
+          isOpen ? "max-h-screen" : "max-h-0"
+        }`}
+      >
+        <div className="flex flex-col space-y-2 container mx-auto justify-center md:justify-start font-medium text-[#707070] py-2 px-4 md:px-8">
+          <Link href="#" className="hover:underline">
+            GPU Cloud
+          </Link>
+          <Link href="#" className="hover:underline">
+            Clusters
+          </Link>
+          <Link href="#" className="hover:underline">
+            Inference
+          </Link>
+          <Link href="#" className="hover:underline">
+            Blog
+          </Link>
+          <Link href="#" className="hover:underline">
+            API
+          </Link>
+          <Link href="#" className="hover:underline">
+            Docs
+          </Link>
+
+          <div className="mx-auto items-center space-x-4 font-semibold text-[#707070]">
+            <Link href="#" className=" hover:text-gray-700">
+              Login
+            </Link>
+            <Link
+              href="#"
+              className="px-4 py-2 bg-teal-800 text-white rounded-lg hover:bg-[#245866]"
+            >
+              Sign up
+            </Link>
+          </div>
+        </div>
+      </div>
+      {/* )} */}
     </div>
   );
 }
